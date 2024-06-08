@@ -39,3 +39,25 @@ function tiltAndReset() {
     resetCard();
 }
 tiltAndReset();
+// const form = document.getElementById('contact-form')
+function sendMail() {
+    // Event.preventDefault();
+    const mailTo = document.getElementById('emailFrom').value;
+    const mailSubject = document.getElementById('mailSubject').value;
+    const mailBody = document.getElementById('mailBody').value;
+    // const mailSenderName = document.getElementById('mailBody');
+    Email.send({
+        // Host: "smtp.gmail.com",
+        Host : "smtp.elasticemail.com",
+        SecureToken : "73ee019-fdd1-4165-aaf7-7757057056d6",
+        // Username: "chaturvedipawan2001@gmail.com",
+        // Password: "Nineteen@60",
+        To : 'chaturvedipawan2001@gmal.com',
+        From : mailTo,
+        Subject : mailSubject,
+        Body : mailBody,
+    }).then(function (message){
+        alert('Email sent successfully!');
+    });
+}
+// form.addEventListener('submit',sendMail);

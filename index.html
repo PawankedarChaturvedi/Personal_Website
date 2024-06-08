@@ -10,9 +10,11 @@
         <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- <script src = "https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script> -->
+        <script src="script.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body id = "main-Container" >
-        <script src="script.js"></script>
+
         <header class= "header">
             <a href="#" class="logo">Portfolio</a>
             <nav class="navbar">
@@ -249,12 +251,12 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="">
-                    <input type="" placeholder="Enter Your Name" required>
-                    <input type="email" placeholder="Enter Your Email" required>
-                    <input type="" placeholder="Enter Your Subject">
-                    <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
-                    <input type="submit" value="submit" class="send">
+                <form action="javascript:sendMail();" id="contact-form" method="post">
+                    <input id="mailSenderName" type="text" placeholder="Enter Your Name" required>
+                    <input  id="emailFrom" type="email" placeholder="Enter Your Email" required>
+                    <input id="mailSubject" type="subject" placeholder="Enter Your Subject">
+                    <textarea name="" id="mailBody" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+                    <input type="submit" value="Submit" class="send" >
                 </form>
             </div>
         </section>
