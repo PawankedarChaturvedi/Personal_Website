@@ -39,25 +39,21 @@ function tiltAndReset() {
     resetCard();
 }
 tiltAndReset();
-// const form = document.getElementById('contact-form')
 function sendMail() {
-    // Event.preventDefault();
     const mailTo = document.getElementById('emailFrom').value;
     const mailSubject = document.getElementById('mailSubject').value;
     const mailBody = document.getElementById('mailBody').value;
-    // const mailSenderName = document.getElementById('mailBody');
+    const mailSenderName = document.getElementById('mailBody').value;
     Email.send({
-        // Host: "smtp.gmail.com",
         Host : "smtp.elasticemail.com",
-        SecureToken : "73ee019-fdd1-4165-aaf7-7757057056d6",
-        // Username: "chaturvedipawan2001@gmail.com",
-        // Password: "Nineteen@60",
+        SecureToken : "512cd2bf-30c6-4d44-b55d-22bf7489148d",
         To : 'chaturvedipawan2001@gmal.com',
         From : mailTo,
         Subject : mailSubject,
-        Body : mailBody,
+        Body : 'Name: '+mailSenderName+ 'br'+ mailBody,
     }).then(function (message){
         alert('Email sent successfully!');
+        
     });
 }
-// form.addEventListener('submit',sendMail);
+
