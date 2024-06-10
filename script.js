@@ -46,7 +46,7 @@ function sendMail() {
     const mailSenderName = document.getElementById('mailBody').value;
     Email.send({
         Host : "smtp.elasticemail.com",
-        SecureToken : "512cd2bf-30c6-4d44-b55d-22bf7489148d",
+        SecureToken : "c00c25c4-cc62-432b-b8ce-9e1cc850d457",
         To : 'chaturvedipawan2001@gmal.com',
         From : mailTo,
         Subject : mailSubject,
@@ -56,4 +56,11 @@ function sendMail() {
         
     });
 }
-
+function myFunction() {
+    var x = document.getElementById("navBar");
+    if (x.style.display == "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }

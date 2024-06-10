@@ -14,16 +14,18 @@
         <script src="https://smtpjs.com/v3/smtp.js"></script>
     </head>
     <body id = "main-Container" >
-
         <header class= "header">
             <a href="#" class="logo">Portfolio</a>
-            <nav class="navbar">
+            <nav class="navbar" id="navBar">
                 <a href="#home" style="--i:1">Home</a>
                 <a href="#about" style="--i:2">About</a>
                 <a href="#services" style="--i:3">Services</a>
                 <a href="#skills" style="--i:4">Portfolio</a>
-                <a href="#contact" style="--i:5">Contact</a>
+                <a href="#contact" style="--i:5">Contact</a>  
             </nav>
+            <a href="javascript:void(0);" class="barIcon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>  
         </header>    
         <section class="home">
             <div class="home-content">
@@ -251,7 +253,7 @@
                 </div>
             </div>
             <div class="contact-form">
-                <form action="javascript:sendMail();" onsubmit=" reset();" id="contact-form" method="post">
+                <form action="javascript:sendMail();"id="contact-form" method="post">
                     <input id="mailSenderName" type="text" placeholder="Enter Your Name" required>
                     <input  id="emailFrom" type="email" placeholder="Enter Your Email" required>
                     <input id="mailSubject" type="subject" placeholder="Enter Your Subject">
@@ -263,6 +265,6 @@
         <div class="last-text">
             <p>Developed By Pawan Chaturvedi @ 2024</p>
         </div>
-        <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#" class="top" ><i class="bx bx-up-arrow-alt"></i></a>
     </body>
 </html>
