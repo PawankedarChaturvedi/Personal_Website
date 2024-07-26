@@ -18,14 +18,14 @@
             <a href="#" class="logo">Portfolio</a>
             <nav class="navbar" id="navBar">
                 <a href="#home" style="--i:1">Home</a>
-                <a href="#about" style="--i:2">About</a>
+                <a href="#about-text" style="--i:2">About</a>
                 <a href="#services" style="--i:3">Services</a>
                 <a href="#skills" style="--i:4">Portfolio</a>
                 <a href="#contact" style="--i:5">Contact</a>  
             </nav>
             <a href="javascript:void(0);" class="barIcon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
-            </a>  
+            </a>
         </header>    
         <section class="home">
             <div class="home-content">
@@ -40,39 +40,55 @@
                     <a href="https://wa.me/+918424871417" style="--i:9"><i class="bx bxl-whatsapp"></i></a>
                     <!-- <a href="#" style="--i:10"><i class="bx bxl-youtube"></i></a> -->
                 </div>
-                <a href="" class="btn-box"> More About Me</a>
+                <a href="#about" class="btn-box"> More About Me</a>
                 <a class="btn-box" href="CV  Personal.pdf" url="CV Personal.pdf" title="Download Resume"download>
                     <i class="fa fa-download"></i> Download Resume </a>
             </div>
             <img src="pawanImage.jpg" class = "photo-section" >
-        </section>  
+        </section>
         <section class="about" id="about">
             <!-- <span class="home-imgHover"></span> -->
             <div class="about-img">
                 <img src = "pawanImage.jpg" id = "second_Photo">
             </div>
-            <div class="about-text">
+            <div class="about-text" id = "about-text">
                 <h2>About<span>Me</span></h2>
                 <h4>Python Developer</h4>
                 <p>
                     As an Automation Developer with 2 years of experience, I specialize in creating efficient and robust automated solutions. My expertise spans a range of libraries, enabling me to streamline processes and enhance efficiency across various domains. With over 50 projects under my belt, I’ve honed my skills in delivering reliable and scalable automation solutions.
-                    <!-- <br><br>Key Skills and Technologies:<br>
-                    Pandas: Revolutionizing Data Handling
-                    Pandas is my go-to tool for data manipulation and analysis. Its DataFrame structure simplifies tasks like cleaning, filtering, and transforming data. For automation involving large datasets, Pandas is indispensable.
-                    <br><br>Selenium: Web Automation Made Effortless
-                    Selenium empowers me to interact with web applications through real web browsers. It’s ideal for tasks such as web scraping, form submission, and UI testing. Cross-browser compatibility enhances its appeal.
-                    <br><br>Beautiful Soup: HTML Parsing Simplified
-                    Beautiful Soup excels in HTML and XML parsing. When combined with web scraping, it becomes a formidable tool for extracting relevant information from websites. Its intuitive syntax and flexibility make it a favorite for automation projects requiring web data extraction.
-                    Requests: Simplifying HTTP Requests
-                    Requests simplifies handling HTTP requests, making interactions with web APIs seamless. Its straightforward syntax and extensive functionality enable developers to automate tasks involving data retrieval, authentication, and interaction with web services.
-                    <br><br>NumPy: Numerical Computing Powerhouse
-                    NumPy’s array operations and mathematical functions make it fundamental for numerical computing. Automation projects involving scientific calculations, simulations, and data analysis benefit from NumPy’s speed and efficiency.
-                    <br><br>Shiny ®: Interactive Web Applications
-                    Although not a Python library, Shiny (from R) allows me to create interactive web applications. I leverage its capabilities for data visualization and user-friendly interfaces.
-                    Additional Libraries (Tailor to Your Expertise)
-                    Depending on the project, I also work with other Python libraries such as Matplotlib (for visualizations), TensorFlow (for machine learning automation), and Scikit-learn (for implementing ML algorithms). -->
                 </p>
-                <a href="#" class="btn-box">More About Me</a>
+                <button href="#" class="btn-box" onclick="openForm()" style="border: none;">More About Me</button>
+                <div class="aboutMe-popup" id="aboutMe">
+                    <br><br><button href="#" class="btn-box_AboutMe" onclick="closeForm()">X</button>
+                    <div class="aboutme_Content" >
+                        <span style="color:white; font-size:x-large;">As an Automation Developer with 2 years of experience, I specialize in creating efficient and robust automated solutions. My expertise spans a range of libraries, enabling me to streamline processes and enhance efficiency across various domains. With over 50 projects under my belt, I’ve 
+                            honed my skills in delivering reliable and scalable automation solutions.</span><br><br><br>
+                        <span style="color: aqua; font-size:xx-large;">Key Skills and Technologies:</span><br><br>
+                        
+                        <span style="font-size:x-large; color:rgb(107, 113, 241)">Pandas:</span> <span style="font-size: larger;"> Revolutionizing Data Handling</span>
+                        <p >Pandas is my go-to tool for data manipulation and analysis. Its DataFrame structure simplifies tasks like cleaning, filtering, and transforming data. 
+                        For automation involving large datasets, Pandas is indispensable.</p>
+                        
+                        <br><br><span style="font-size:x-large; color:rgb(107, 113,241)" >Selenium:</span> <span style="font-size: larger;"> Web Automation Made Effortless</span>
+                        <p>Selenium empowers me to interact with web applications through real web browsers. It’s ideal for tasks such as web scraping, form submission, and UI testing. 
+                        Cross-browser compatibility enhances its appeal.</p>
+                        
+                        <br><br><span style="font-size:x-large; color:rgb(107, 113,241)">Beautiful Soup:</span> <span style="font-size: larger;"> HTML Parsing Simplified</span>
+                        <p>Beautiful Soup excels in HTML and XML parsing. When combined with web scraping, it becomes a formidable tool for extracting relevant information from websites. Its intuitive syntax and flexibility make it a favorite for automation projects requiring web data extraction.
+                        Requests: Simplifying HTTP Requests<br>
+                        Requests simplifies handling HTTP requests, making interactions with web APIs seamless. Its straightforward syntax and extensive functionality enable developers to automate tasks involving data retrieval, authentication, and interaction with web services.</p>
+                        
+                        <br><br><span style="font-size:x-large; color:rgb(107, 113,241)">NumPy:</span> <span style="font-size: larger;"> Numerical Computing Powerhouse</span>
+                        <p>NumPy’s array operations and mathematical functions make it fundamental for numerical computing. Automation projects involving scientific calculations, simulations, and data analysis benefit 
+                            from NumPy’s speed and efficiency.</p>
+                        
+                        <br><br><span style="font-size:x-large; color:rgb(107, 113,241)">Shiny ®: </span> <span style="font-size: larger;">Interactive Web Applications</span>
+                        <p >Although not a Python library, Shiny (from R) allows me to create interactive web applications. I leverage its capabilities for data visualization and user-friendly interfaces.<br>
+                        Additional Libraries (Tailor to Your Expertise) Depending on the project, I also work with other Python libraries such as Matplotlib (for visualizations), TensorFlow (for machine learning automation), 
+                        and Scikit-learn (for implementing ML algorithms).</p>
+                        <br><br><hr style=" border: 2px solid cyan"><br><br>
+                    </div>
+                </div>
             </div>
         </section>
         <section>

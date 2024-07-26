@@ -64,3 +64,10 @@ function myFunction() {
       x.style.display = "block";
     }
   }
+function openForm() {
+    document.getElementById("aboutMe").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("aboutMe").style.display = "none";
+}
