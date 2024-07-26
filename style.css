@@ -2014,9 +2014,9 @@
         padding: 15px 25px;
         border-radius: 10px;
         border: 13px solid rgb(2, 5, 37);
-        box-shadow: 0 0 5px cyan,
-        0 0 25px cyan, 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
+        box-shadow: 1px 1px 20px #012290f7,
+                   1px 1px 40px #002eb8f7,
+       1px 1px 60px #0053b8f7;
     }
     .aboutme_Content p{
         font-size: large;
@@ -2046,8 +2046,8 @@
         color:  rgb(2, 5, 37);
         background-color: #0ef;
         box-shadow: 0 0 5px rgb(2, 5, 37),
-        0 0 25px rgb(2, 5, 37), 0 0 50px cyan,
-        0 0 100px cyan, 0 0 200px cyan;
+        1px 1px 25px cyan, 1px 1px 50px cyan,
+        1px 1px 100px cyan, 1px 1px 250px cyan;
     }
 
     section {
