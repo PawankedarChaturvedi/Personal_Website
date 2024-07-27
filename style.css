@@ -229,6 +229,8 @@
         height: auto;
         width: 90%;
         border-radius: 18px;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 2s;
     }
     
     .about-text h2{
