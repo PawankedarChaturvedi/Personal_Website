@@ -343,7 +343,7 @@
         bottom: 0%;
         border: 3px solid rgb(2, 5, 37);
         z-index: 1;
-        right: 10px;
+        right: 13px;
         background-color: rgb(2, 5, 37);
     }
     /* Add styles to the form container */
@@ -351,8 +351,8 @@
         width: 95%;
         overflow: auto; 
         text-align: left;
-        margin: 10% 6%;
-        max-height: 98vh; 
+        margin: 8% 6%;
+        max-height: 95vh; 
         padding: 0px 5px;
         border-radius: 10px;
         border: 13px solid rgb(2, 5, 37);
@@ -379,7 +379,7 @@
         font-weight: 600;
         font-size: 16px;
         margin-left: 40%;
-        margin-top: -7%;
+        margin-top: -4%;
         position: absolute;
         border: none;
         /* opacity: 0; */
