@@ -351,8 +351,8 @@
         width: 95%;
         overflow: auto; 
         text-align: left;
-        margin: 0% 6%;
-        max-height: 470px; 
+        margin: 2% 6%;
+        max-height: 98vh; 
         padding: 0px 5px;
         border-radius: 10px;
         border: 13px solid rgb(2, 5, 37);
@@ -370,7 +370,7 @@
     }
     .btn-box_AboutMe {
         display: inline-block;
-        padding: 8px 11px;
+        padding: 10px 13px;
         color:  cyan;
         background-color: rgb(2, 5, 37);
         text-decoration: none;
@@ -379,7 +379,7 @@
         font-weight: 600;
         font-size: 16px;
         margin-left: 40%;
-        margin-top: -10%;
+        margin-top: -7%;
         position: absolute;
         border: none;
         /* opacity: 0; */
