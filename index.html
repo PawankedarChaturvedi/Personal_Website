@@ -32,8 +32,9 @@
                 <h3>Hello, I'm</h3>
                 <h1>Pawan Chaturvedi</h1>
                 <h3>And I'm a <span id="text"></span></h3>
-                <p>I'm a PYTHON DEVELOPER with a extensive experience for over 2 Years.
-                    <br>expertise in Automation and Web Devlopment</p>
+                <p>Results-driven IT professional with over 2 years of experience in automation and web development. Proven track record of 
+                    increasing team efficiency by up to 90% through innovative automation solutions. Skilled in Python, Selenium, Azure DevOps, 
+                    and web development technologies. </p>
                 <div class="home-sci">
                     <a href="mailto:chaturvedipawan2001@gmail.com" style="--i:7"><i class="bx bxl-gmail"></i></a>
                     <a href="https://www.linkedin.com/in/pawan-chaturvedi-244061229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app " style="--i:8"><i class="bx bxl-linkedin"></i></a>
@@ -57,9 +58,9 @@
                 <p>
                     As an Automation Developer with 2 years of experience, I specialize in creating efficient and robust automated solutions. My expertise spans a range of libraries, enabling me to streamline processes and enhance efficiency across various domains. With over 50 projects under my belt, I’ve honed my skills in delivering reliable and scalable automation solutions.
                 </p>
-                <button href="#" class="btn-box" onclick="openForm()" style="border: none;">More About Me</button>
+                <button href="#" class="btn-box" onclick="openForm('aboutMe')" style="border: none;">More About Me</button>
                 <div class="aboutMe-popup" id="aboutMe">
-                    <br><br><button href="#" class="btn-box_AboutMe" onclick="closeForm()">X</button>
+                    <br><br><button href="#" class="btn-box_AboutMe" onclick="closeForm('aboutMe')">X</button>
                     <div class="aboutme_Content" >
                         <span id="Bio-AboutMe" >As an Automation Developer with 2 years of experience, I specialize in creating efficient and robust automated solutions. My expertise spans a range of libraries, enabling me to streamline processes and enhance efficiency across various domains. With over 50 projects under my belt, I’ve 
                             honed my skills in delivering reliable and scalable automation solutions.</span><br><br><br>
@@ -99,19 +100,74 @@
                         <div>
                             <i class="bx bx-code" style="color: cyan;"></i>
                             <h2>Web Development</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi reiciendis hic deserunt, libero praesentium officiis! Qui praesentium accusantium, quasi aperiam sit eos deserunt illo voluptate perspiciatis quo, soluta minus incidunt.</p>
-                                <a href="#" class="read">Learn More</a>
+                            <p>I am dedicated to creating interactive and dynamic web applications that enhance user engagement and provide a rich user experience. Whether it’s a custom dashboard, a social networking site, or a complex data visualization tool, I have the expertise to bring your ideas to life. My comprehensive range of services includes:</p>
+                            <a href="#" class="read" onclick="openForm('services-list')">Learn More</a>
+                            <div class="services-list-popup" id="services-list">
+                                <br><br><button href="#" class="btn-box_services-list" onclick="closeForm('services-list')">X</button>
+                                <div class="services-list_Content" >
+                                    <span id="Web-Development-Services" >Welcome to my Web Development Services! I am dedicated to creating dynamic, responsive,
+                                         and user-friendly websites that cater to your unique business needs. My comprehensive range of services includes:</span><br><br><br>
+                                    
+                                    <span style="font-size:x-large; color:cyan">Custom Website Development:</span>
+                                    <p>I specialize in crafting bespoke websites tailored to your specific requirements.
+                                         Whether you need a simple informational site or a complex web application, I ensure that your website is built to your exact specifications, reflecting your brand’s identity and values.</p>
+                                    
+                                    <br><br><span style="font-size:x-large; color:cyan" >Responsive Design:</span>
+                                    <p>In today’s mobile-first world, having a responsive website is crucial. I design websites that look and function perfectly on all devices, from desktops to smartphones.
+                                         This ensures a seamless user experience, no matter how your audience accesses your site.</p>
+                                    
+                                    <br><br><span style="font-size:x-large; color:cyan">E-commerce Solutions</span>
+                                    <p>I build secure and efficient online stores that help you boost your sales and grow your business. From product listings and shopping carts to payment gateways and order management,
+                                         I provide end-to-end e-commerce solutions that are easy to manage and scale.</p>
+                                    
+                                    <br><br><span style="font-size:x-large; color:cyan">Content Management Systems (CMS)</span>
+                                    <p>Managing your website content should be simple and intuitive. I develop websites using popular CMS platforms like WordPress, Joomla, and Drupal,
+                                         allowing you to easily update and maintain your site without needing extensive technical knowledge.</p>
+                                    
+                                    <br><br><span style="font-size:x-large; color:cyan">Web Application Development</span>
+                                    <p>I create interactive and dynamic web applications that enhance user engagement and provide a rich user experience. Whether it’s a custom dashboard,
+                                         a social networking site, or a complex data visualization tool, I have the expertise to bring your ideas to life.</p>
+
+                                    <br><br><span style="font-size:x-large; color:cyan">SEO Optimization</span>
+                                    <p>A beautiful website is only effective if people can find it. I optimize your website for search engines to improve its visibility and attract more visitors. From keyword research and on-page SEO to technical SEO and link building,
+                                         I employ best practices to help your site rank higher in search results.</p>
+
+                                    <br><br><span style="font-size:x-large; color:cyan">Maintenance & Support</span>
+                                    <p>Your website needs to be up-to-date and running smoothly at all times. I offer ongoing maintenance and support services to ensure your site remains secure, performs well, and stays current with the latest web standards and technologies.
+                                         This includes regular updates, backups, security checks, and performance optimization.</p>
+
+                                    <br><br><span style="font-size:x-large; color:cyan">Additional Services</span><br>
+
+                                    <span style="font-size: larger;">. UI/UX Design:</span>
+                                    <p> Creating intuitive and visually appealing interfaces that enhance user satisfaction.</p><br>
+                                    
+                                    <span style="font-size: larger;">. API Integration: </span>
+                                    <p>Connecting your website with third-party services and applications to extend its functionality.</p><br>
+
+                                    <span style="font-size: larger;">. Performance Optimization:</span>
+                                    <p>Ensuring your website loads quickly and efficiently, providing a better user experience.</p><br>                                        
+                                    
+                                    <span style="font-size: larger;">. Accessibility Compliance:</span>
+                                    <p>Making your website accessible to all users, including those with disabilities, by adhering to WCAG guidelines.</p><br><br>                                     
+                                    
+                                    <p>With a focus on the latest technologies and best practices, I deliver high-quality web solutions that drive results and help your business grow.
+                                         Let’s work together to create a website that not only meets your needs but exceeds your expectations.
+                                    </p><br>                                        
+
+                                    <br><br><hr style=" border: 2px solid cyan"><br><br>
+                                </div>
+                            </div>
                         </div>
                         <div>
                             <i class="bx bx-crop"></i>
                             <h2>Automation Development</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi reiciendis hic deserunt, libero praesentium officiis! Qui praesentium accusantium, quasi aperiam sit eos deserunt illo voluptate perspiciatis quo, soluta minus incidunt.</p>
+                            <p>Our automation development services streamline business processes, enhance productivity, and reduce operational costs. We specialize in creating custom automation solutions tailored to meet the unique needs of our clients. By leveraging cutting-edge technologies and industry best practices, we ensure that our solutions are both innovative and reliable.</p>
                                 <a href="#" class="read">Learn More</a>
                         </div>
                         <div>
                             <i class="bx bxl-apple" style="color: cyan;"></i>
                             <h2>Software Development</h2>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi reiciendis hic deserunt, libero praesentium officiis! Qui praesentium accusantium, quasi aperiam sit eos deserunt illo voluptate perspiciatis quo, soluta minus incidunt.</p>
+                            <p> Offering custom software solutions, web and mobile app development, cloud services, and ongoing maintenance. We ensure high-quality, user-centric designs and seamless integration with cutting-edge technologies. Our team excels in delivering scalable and secure applications, tailored to meet your business needs. From initial concept to final deployment, we provide comprehensive support and innovative solutions.</p>
                                 <a href="#" class="read">Learn More</a>
                         </div>
                     </div>
@@ -256,8 +312,9 @@
             <div class="contact-text">
                 <h2>Contact<span>Me</span></h2>
                 <h4>Let's work Together</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores dolores perspiciatis tenetur commodi doloremque, odio ipsam, sequi enim fugiat iure distinctio neque consequuntur ipsa officia quisquam. Iusto, animi sapiente.</p>
+                <p>I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to connect with me on any of the platforms above or fill out the form below to send me a direct message.</p>
                 <div class="contact-list">
+                    <p>I would love to hear from you! Whether you have a question about my projects, want to discuss a potential collaboration, or just want to say hello, feel free to reach out.</p>
                     <li><i class="bx bxs-send"></i>chaturvedipawan2001@gmail.com</li>
                     <li><i class="bx bxs-phone"></i> 8424871417</li>
                 </div>

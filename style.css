@@ -1051,12 +1051,12 @@
     }
     
     .home-content p {
-        font-size: 21px;
-        opacity: 0;
+        font-size: 23px;
+            opacity: 0;
         text-align: center;
         animation: slideLeft 1s ease forwards;
         animation-delay: 1s;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     }
     
     .home-sci a {
@@ -1211,9 +1211,12 @@
         margin-bottom: 9px;
     }
     .services-list div h2 {
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 500px;
         margin-bottom: 5px;
+    }
+    .services-list div p{
+        font-size: 16px;
     }
     .services-list div a {
         text-decoration: none;
@@ -1247,6 +1250,60 @@
     .services-list div:hover{
         transform: translateY(-10px);
     }
+    .services-list-popup {
+        display: none;
+        position: fixed;
+        /* padding:35px 40px; */
+        width: 100vw;
+        height: 100vh;
+        bottom: 0%;
+        border: 3px solid rgb(2, 5, 37);
+        z-index: 1;
+        right: 13px;
+        background-color: rgb(2, 5, 37);
+    }
+    /* Add styles to the form container */
+    .services-list-popup .services-list_Content {
+        width: 95vw;
+        overflow: auto; 
+        text-align: left;
+        margin: 8% 6%;
+        max-height: 95vh; 
+        padding: 0px 5px;
+        border-radius: 10px;
+        border: 13px solid rgb(2, 5, 37);
+        box-shadow: 1px 1px 20px #012290f7,
+                    1px 1px 40px #002eb8f7,
+        1px 1px 60px #0053b8f7;
+    }
+    .services-list_Content #Web-Development-Services{
+        color: white;
+        font-size: large;
+    }
+    .services-list_Content p{
+        font-size: 17px;
+        margin-top: 12px;
+    }
+    .btn-box_services-list {
+        display: inline-block;
+        padding: 10px 13px;
+        color:  cyan;
+        background-color: rgb(2, 5, 37);
+        text-decoration: none;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 40%;
+        margin-top: -4%;
+        position: absolute;
+        border: none;
+        /* opacity: 0; */
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan;
+    }
+
+
     /* The popup form */
     .aboutMe-popup {
         display: none;
