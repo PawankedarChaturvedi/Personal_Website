@@ -1255,15 +1255,17 @@
         position: fixed;
         /* padding:35px 40px; */
         width: 100vw;
-        height: 100vh;
+        height: 100vh;  
         bottom: 0%;
         border: 3px solid rgb(2, 5, 37);
         z-index: 1;
         right: 13px;
         background-color: rgb(2, 5, 37);
+        
     }
     /* Add styles to the form container */
     .services-list-popup .services-list_Content {
+        display: block;
         width: 95vw;
         overflow: auto; 
         text-align: left;
