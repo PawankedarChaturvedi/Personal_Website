@@ -78,6 +78,7 @@
         text-decoration: none;
         font-weight: 500;
         margin-left: 35px;
+        opacity: 0;
         transition: 1s;
         animation: slideTop .5s ease forwards;
         animation-delay: calc(.2s * var(--i));
@@ -90,7 +91,7 @@
         box-shadow:0 0 10px #0ef,
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 2000px cyan;
-    }
+    } 
     .home{
         position: relative;
         width: 100%;
@@ -106,7 +107,6 @@
         text-align: center;
         /* z-index: 1; */
         /* overflow: auto; */
-
     }
     .home-content{
         /* max-width: 600px; */
@@ -333,9 +333,63 @@
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan;
     }
-    .services-list div:hover{
+    /* .services-list div:hover{
         transform: translateY(-10px);
+    } */
+    .services-list div .services-list-popup {
+        display: none;
+        position: fixed;
+        /* padding:35px 40px; */
+        width: 100%;
+        height: 100vh;
+        bottom: 0%;
+        border: 3px solid rgb(2, 5, 37);
+        z-index: 1;
+        right: 0px;
+        background-color: rgb(2, 5, 37);
     }
+    /* Add styles to the form container */
+    .services-list-popup .services-list_Content {
+        width: 95%;
+        overflow: auto; 
+        text-align: left;
+        max-height: 95vh; 
+        border-radius: 10px;
+        border: 13px solid rgb(2, 5, 37);
+        box-shadow: 1px 1px 20px #012290f7,
+                    1px 1px 40px #002eb8f7,
+        1px 1px 60px #0053b8f7;
+    }
+    .services-list_Content #Web-Development-Services{
+        color: white;
+        font-size: large;
+    }
+    .services-list-popup .services-list_Content p{
+        font-size: 17px;
+        margin-top: 12px;
+    }
+    .services-list-popup #Web-Development-Services-footer{
+        color: white;
+        font-size: large;
+    }
+    .btn-box_services-list {
+        display: inline-block;
+        padding: 10px 13px;
+        color:  cyan;
+        background-color: rgb(2, 5, 37);
+        text-decoration: none;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 80%;
+        margin-top: -10%;
+        position: absolute;
+        border: none;
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan;
+    }
+
     /* The popup form */
     .aboutMe-popup {
         display: none;
@@ -409,14 +463,19 @@
         width: 100%;
         justify-content: space-around;
     }
-    .container1{
+    .container1 {
         display: flex;
         width: 550px;
         flex-direction: column;
-        /* height: 500px; */
         padding: 0px 60px;
-        /* margin-left: 120px; */
-    }
+    }  
+    .container1:last-child {
+        display: flex;
+        width: 550px;
+        flex-direction: column;
+        padding: 0px 20px;
+        margin-top: 10%;
+    }   
     
     .heading1{
         text-align: center;
@@ -646,7 +705,7 @@
         color: #0ef;
     }
     .portfolio-content{
-        width: 80vw;
+        width: 85vw;
         display: flex;
         flex-direction: column;
         /* grid-template-columns: repeat(auto-fit, minmax(259px, auto)); */
@@ -656,8 +715,8 @@
         overflow: hidden;
         border-radius: 8px;
         cursor: pointer;
-        width: 100%;
-        height: auto;
+        width: 95%;
+        height: 86vh;
         display: flex;
         justify-content: center;
         text-align: center;
