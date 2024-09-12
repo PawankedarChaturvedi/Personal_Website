@@ -229,6 +229,7 @@
         height: auto;
         width: 90%;
         border-radius: 18px;
+        opacity:0;
         animation: slideLeft 1s ease forwards;
         animation-delay: 2s;
     }
@@ -1250,10 +1251,9 @@
     .services-list div:hover{
         transform: translateY(-10px);
     }
-    .services-list-popup {
+    .services-list div .services-list-popup {
         display: none;
         position: fixed;
-        /* padding:35px 40px; */
         width: 100vw;
         height: 100vh;  
         bottom: 0%;
@@ -2905,6 +2905,9 @@
         align-items: center;
         gap: 1.5rem;
         padding-top: 100px;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 2s;
     }
     
     .about-img img {
@@ -2914,6 +2917,9 @@
         margin-left: 8%;
         width: 100%;
         border-radius: 18px;
+        opacity: 0;
+        animation: slideLeft 1s ease forwards;
+        animation-delay: 2s;
     }
     
     .about-text h2{
@@ -2980,8 +2986,12 @@
         margin-bottom: 30px;
     }
     .services-list div h2 {
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 500px;
+    }
+    .services-list div p {
+        font-size: 17px;
+        padding: 10px;
     }
     .services-list div a {
         text-decoration: none;
@@ -3012,11 +3022,65 @@
         0 0 25px cyan, 0 0 50px cyan,
         0 0 100px cyan, 0 0 200px cyan;
     }
-    .services-list div:hover{
+    /* .services-list div:hover{
         transform: translateY(-10px);
-    }
-    /* Button to open the popup form */
+    } */
 
+    .services-list div .services-list-popup {
+        display: none;
+        position: fixed;
+        padding:35px 40px;
+        width: 100%;
+        height: 100vh;
+        bottom: 0%;
+        border: 3px solid rgb(2, 5, 37);
+        z-index: 1;
+        right: 2px;
+        background-color: rgb(2, 5, 37);
+    }
+    /* Add styles to the form container */
+    .services-list-popup .services-list_Content {
+        width: 80%;
+        overflow: auto; 
+        margin: 3% 11%;
+        max-height: 550px; 
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: 13px solid rgb(2, 5, 37);
+        box-shadow: 1px 1px 20px #012290f7,
+                   1px 1px 40px #002eb8f7,
+       1px 1px 60px #0053b8f7;
+    }
+    .services-list_Content #Web-Development-Services{
+        color: white;
+        font-size: x-large;
+    }
+    .services-list-popup .services-list_Content p{
+        font-size: 18px;
+        padding-top: 3px;
+        margin: 0%;
+    }
+    .services-list-popup #Web-Development-Services-footer{
+        color: white;
+        font-size: large;
+    }
+    .btn-box_services-list {
+        display: inline-block;
+        padding: 17px 20px;
+        color:  cyan;
+        background-color: rgb(2, 5, 37);
+        text-decoration: none;
+        border-radius: 40px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-size: 16px;
+        margin-left: 87%;
+        margin-top: 2%;
+        position: absolute;
+        border: none;
+        box-shadow: 0 0 5px cyan,
+        0 0 25px cyan;
+    }
     /* The popup form */
     .aboutMe-popup {
         display: none;
@@ -3066,7 +3130,6 @@
         margin-top: 2%;
         position: absolute;
         border: none;
-        /* opacity: 0; */
         box-shadow: 0 0 5px cyan,
         0 0 25px cyan;
     }
@@ -3318,7 +3381,7 @@
         padding-top: 120px;
     }
     .main-text h2{
-        margin-bottom: 80px;
+        margin-bottom: 60px;
         font-size: 60px;
         line-height: 1;
         text-align: center;
@@ -3328,10 +3391,12 @@
     }
     .portfolio-content{
         width: 98vw;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(359px, auto));
+        display: flex;
+        justify-content: space-around;
     }
     .row{
+        width: 30vw;
+        height: 72vh;
         position: relative;
         overflow: hidden;
         border-radius: 8px;
@@ -3346,8 +3411,9 @@
         transition: transform 0.5s;
     }
     .layer{
-        width: 100%;
+        width: 96%;
         height: 0;
+        margin-left: 10px;
         background: linear-gradient(rgba(0,0,0,0.1),cyan);
         position: absolute;
         border-radius: 8px;
@@ -3386,7 +3452,7 @@
         border-radius: 50%;
     }
     .row:hover img{
-        transform: scale(1.1);
+        transform: scale(1.03);
     }
     .row:hover .layer{
         height: 100%; 

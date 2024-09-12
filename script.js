@@ -40,20 +40,26 @@ function tiltAndReset() {
 }
 tiltAndReset();
 function sendMail() {
+    event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
     const mailTo = document.getElementById('emailFrom').value;
     const mailSubject = document.getElementById('mailSubject').value;
     const mailBody = document.getElementById('mailBody').value;
-    const mailSenderName = document.getElementById('mailBody').value;
+    const mailSenderName = document.getElementById('mailSenderName').value; // Corrected element ID
     Email.send({
         Host : "smtp.elasticemail.com",
-        SecureToken : "c00c25c4-cc62-432b-b8ce-9e1cc850d457",
-        To : 'chaturvedipawan2001@gmal.com',
+        Username: "chaturvedipawan2001@gmail.com",
+        Password: "20FEC693A0B4A01AB4947A23D2FB56CC961B",
+        // SecureToken : "c00c25c4-cc62-432b-b8ce-9e1cc850d457",
+        To : 'chaturvedipawan2001@gmail.com', // Corrected email address
         From : mailTo,
         Subject : mailSubject,
-        Body : 'Name: '+mailSenderName+ 'br'+ mailBody,
+        Body : 'Name: ' + mailSenderName + '<br>' + mailBody, // Corrected line break
     }).then(function (message){
         alert('Email sent successfully!');
-        
+    }).catch(function (error) {
+        console.error('Error sending email:', error);
+        alert('Failed to send email. Please try again later.');
     });
 }
 function myFunction() {
